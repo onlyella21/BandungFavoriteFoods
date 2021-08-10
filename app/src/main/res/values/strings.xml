@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">BandungFavoriteFoods</string>
+    <string name="foods_name">Nama Makanan</string>
+    <string name="detail">Detail</string>
+    <string name="share">Share</string>
+    <string name="tentang">About</string>
+    <string name="nama">Ela Wangi</string>
+    <string name="email">onlyjustella21@gmail.com</string>
+    <string name="titleUtama">Makanan Favorit di Bandung</string>
+    <string name="lokasi">Lokasi</string>
+    <string name="detail_lokasi">Detail Lokasi</string>
+    <string name="harga">Range Harga</string>
+    <string name="detail_harga">Detail Harga</string>
+    <string name="fav">Favorite</string>
+
+</resources>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/food_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailFoodActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_d_name"
+                style="@style/heading"
+                tools:text="@string/foods_name" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/img_d_photo"
+            style="@style/imgDetail"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            tools:src="@tools:sample/avatars" />
+
+
+        <TextView
+            android:id="@+id/tv_d_detail"
+            style="@style/detailtext"
+            android:layout_below="@id/img_d_photo"
+            tools:text="@string/detail" />
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TableRow style="@style/row">
+
+                <TextView
+                    style="@style/label"
+                    android:text="@string/lokasi" />
+
+                <TextView
+                    android:id="@+id/tv_d_lokasi"
+                    style="@style/rowvalue"
+                    android:text="@string/detail_lokasi" />
+            </TableRow>
+
+            <TableRow style="@style/row">
+
+                <TextView
+                    style="@style/label"
+                    android:text="@string/harga" />
+
+                <TextView
+                    android:id="@+id/tv_d_harga"
+                    style="@style/rowvalue"
+                    android:text="@string/detail_harga" />
+            </TableRow>
+
+        </TableLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_share"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_weight="1"
+                android:text="@string/share"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_fav"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_weight="1"
+                android:text="@string/fav"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>
